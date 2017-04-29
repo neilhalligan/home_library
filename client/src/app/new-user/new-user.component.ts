@@ -19,9 +19,10 @@ export class NewUserComponent implements OnInit {
 
   register(){
     this._tokenService.registerAccount({
+      password: 'password',
       email: 'test@example.com',
-      password: '123456',
-      passwordConfirmation: '123456'
+      passwordConfirmation: 'password'
     });
+
   }
 }
