@@ -49,12 +49,13 @@ GEM
     case_transform (0.2)
       activesupport
     concurrent-ruby (1.0.5)
+    database_cleaner (1.3.0)
     diff-lcs (1.3)
     erubis (2.7.0)
-    factory_girl (4.8.0)
+    factory_girl (3.6.2)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.8.0)
-      factory_girl (~> 4.8.0)
+    factory_girl_rails (3.6.0)
+      factory_girl (~> 3.6.0)
       railties (>= 3.0.0)
     ffi (1.9.18)
     globalid (0.4.0)
@@ -96,6 +97,10 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.0.2)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.1)
+      actionpack (~> 5.x)
+      actionview (~> 5.x)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6)
@@ -154,6 +159,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   byebug
+  database_cleaner
   factory_girl_rails
   listen (~> 3.0.5)
   pg (~> 0.18)
@@ -161,6 +167,7 @@ DEPENDENCIES
   rack-cors
   rack-rewrite
   rails (~> 5.0.2)
+  rails-controller-testing
   rspec-rails
   spring
   spring-watcher-listen (~> 2.0.0)
