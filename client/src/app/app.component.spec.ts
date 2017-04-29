@@ -1,12 +1,21 @@
 import { TestBed, async } from '@angular/core/testing';
+import { Component } from '@angular/core';
 
 import { AppComponent } from './app.component';
+
+@component({
+  selector: 'app-book-list'
+  template: ''
+})
+
+class MockBookListComponent { }
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
+        MockBookListComponent
       ],
     }).compileComponents();
   }));
