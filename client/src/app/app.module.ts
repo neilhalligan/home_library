@@ -8,12 +8,14 @@ import { Angular2TokenService } from 'angular2-token';
 import { AppComponent } from './app.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { NewUserComponent } from './new-user/new-user.component';
+import { NewUserFormComponent } from './new-user-form/new-user-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookListComponent,
-    NewUserComponent
+    NewUserComponent,
+    NewUserFormComponent
   ],
   imports: [
     BrowserModule,

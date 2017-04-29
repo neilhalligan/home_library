@@ -8,21 +8,8 @@ import { Angular2TokenService } from 'angular2-token'
 })
 export class NewUserComponent implements OnInit {
 
-  constructor(private _tokenService: Angular2TokenService) {
-    this._tokenService.init({
-      registerAccountPath: '/api/auth'
-    });
-  }
+  constructor() {}
 
   ngOnInit() {
-  }
-
-  register(){
-    this._tokenService.registerAccount({
-      password: 'password',
-      email: 'test@example.com',
-      passwordConfirmation: 'password'
-    });
-
   }
 }
