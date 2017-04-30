@@ -17,4 +17,8 @@ export class BookService {
 
     return this.http.post('/api/books.json', body, options );
   }
+
+  delete(book) {
+    return this.http.delete(`/api/books/${book.id}.json`);
+  }
 }
