@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-@component({
-  selector: 'app-book-list'
+@Component({
+  selector: 'app-book-list',
   template: ''
 })
 
@@ -14,7 +14,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
         MockBookListComponent
       ],
     }).compileComponents();
