@@ -5,7 +5,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { BookService } from '../book.service';
 import { BookListComponent } from './book-list.component';
-import { BookFormComponent } from '../book-form/book-form.component';
+import { MockBookFormComponent } from '../../testing/mock-book-form.component';
 import { MockBookService } from '../../testing/mock-book.service';
 
 describe('BookListComponent', () => {
@@ -16,7 +16,7 @@ describe('BookListComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         BookListComponent,
-        BookFormComponent
+        MockBookFormComponent
       ]
     })
     .overrideComponent(BookListComponent, {
