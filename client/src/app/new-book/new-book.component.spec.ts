@@ -1,23 +1,21 @@
-/* tslint:disable:no-unused-variable */
-
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-import { BookListComponent } from './book-list.component';
+
+import { NewBookComponent } from './new-book.component';
+import { MockBookFormComponent } from '../../testing/mock-book-form.component';
 import { BookService } from '../book.service';
 import { MockBookService } from '../../testing/mock-book.service';
 
-describe('BookListComponent', () => {
-  let component: BookListComponent;
-  let fixture: ComponentFixture<BookListComponent>;
+describe('NewBookComponent', () => {
+  let component: NewBookComponent;
+  let fixture: ComponentFixture<NewBookComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        BookListComponent
-      ]
+        NewBookComponent,
+        MockBookFormComponent ]
     })
-    .overrideComponent(BookListComponent, {
+    .overrideComponent(NewBookComponent, {
       set: {
         providers: [
           { provide: BookService, useClass: MockBookService }
@@ -28,7 +26,7 @@ describe('BookListComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BookListComponent);
+    fixture = TestBed.createComponent(NewBookComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
