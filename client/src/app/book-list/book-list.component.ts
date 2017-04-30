@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+import { BookService } from './book.service';
 
 @Component({
   selector: 'app-book-list',
@@ -9,10 +9,10 @@ import { Http } from '@angular/http';
 export class BookListComponent implements OnInit {
   books: { id: number, name: string }[];
 
-  constructor(private http: Http) { }
+  constructor(private bookService: BookService) { }
 
   ngOnInit() {
-    this.http.get('/api/books.json')
+    this.bookService.getList()
     .subscribe(response => this.books = response.json());
   }
 
