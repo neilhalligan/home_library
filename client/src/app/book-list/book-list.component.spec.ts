@@ -3,9 +3,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { BookService } from '../book.service';
 import { BookListComponent } from './book-list.component';
 import { MockBookFormComponent } from '../../testing/mock-book-form.component';
+import { BookService } from '../book.service';
 import { MockBookService } from '../../testing/mock-book.service';
 
 describe('BookListComponent', () => {
