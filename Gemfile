@@ -33,6 +33,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rails-controller-testing'
   gem 'database_cleaner'
+  gem 'capybara'
+  gem 'selenium-webdriver', '~> 3.4'
   gem 'byebug', platform: :mri
 end
 

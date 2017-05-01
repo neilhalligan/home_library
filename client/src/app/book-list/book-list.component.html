@@ -1,4 +1,15 @@
-<nav>
+
+<h1>Books</h1>
+<table class="table table-bordered table-striped">
+  <tr *ngFor="let book of books">
+    <td>{{ book.name }}</td>
+    <td>
+      <a routerLink="" (click)="delete(book)" class="btn btn-default">Delete</a>
+    </td>
+  </tr>
+</table>
+
+<!-- <nav>
   <a routerLink="/new-book">New Book</a>
 </nav>
 
@@ -7,4 +18,4 @@
     <td>{{ book.name }}</td>
     <td><a routerLink="" (click)="delete(book)">Delete</a></td>
   </tr>
-</table>
+</table> -->
