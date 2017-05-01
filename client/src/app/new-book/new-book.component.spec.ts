@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NewBookComponent } from './new-book.component';
-import { MockBookFormComponent } from '../../testing/mock-book-form.component';
+import { MockBookFormComponent } from '../../testing/mock-book-form.component.spec';
 import { BookService } from '../book.service';
 import { MockBookService } from '../../testing/mock-book.service';
 

@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   template: ''
 })
 
-export class MockBookFormComponent {
-}
+export class MockBookFormComponent { }

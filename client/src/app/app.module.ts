@@ -15,7 +15,7 @@ import { NewBookComponent } from './new-book/new-book.component';
     AppComponent,
     BookListComponent,
     BookFormComponent,
-    NewBookComponent
+    NewBookComponent,
   ],
   imports: [
     BrowserModule,
